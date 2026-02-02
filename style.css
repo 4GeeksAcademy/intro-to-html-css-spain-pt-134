@@ -1,0 +1,109 @@
+/* CSS Document */
+/* 
+
+selector {
+    propiedad: valor;
+}
+
+Unidades de Medidas
+
+px
+em
+rem
+%
+vw
+vh
+
+
+Selector Specificity (ID, Clase, Element)(0,0,0)
+
+
+*/
+
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector Id */
+#home {
+    width: 100%;
+    height: 100vh;
+    font-size: 24px;
+}
+
+/* Selector de Clase */
+/* 16px => 1em */
+.noticia {
+    font-size: .5rem; /* 24px */
+}
+
+/* Selector Tipo o Elemento */
+h1 {
+    color: blue;
+}
+
+/* Selector Conjunto */
+h1, h2, h3 {
+    font-size: 1em;
+}
+
+h4, h5, h6 {
+    font-size: .5em;
+}
+
+/* Selector Descendiente */
+#home p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Selector Hijo */
+#home > .noticia {
+    width: 100%;
+    height: auto;
+    background-color: #c4c4c4;
+}
+
+/* Selector Hermano */
+h3 ~ p {
+    font-size: 14px;
+    text-align: justify;
+    text-transform: capitalize;
+    color: blue;
+}
+
+/* Selector Adyacente */
+h3 + p {
+    font-size: 14px;
+    text-align: justify;
+    text-transform: capitalize;
+    color: green;
+}
+
+/* Selector de Atributo */
+a[href]{ /* atributo presente */
+    color: violet;
+}
+
+a[class="link"]{ /* atributo con el valor indicado */
+    color: green;
+}
+
+a[class~="link2"]{ /* atributo que contenga el valor indicado  */
+    color: red;
+}
+
+a[href^="https"]{ /* atributo conmienza con el valor indicado */
+    color: blueviolet;
+}
+
+a[href$=".png"]{
+    color: brown;
+}
+
+.fa-paper-plane {
+    font-size: 24px;
+    color: green;
+}
